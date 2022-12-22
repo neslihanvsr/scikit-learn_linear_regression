@@ -43,7 +43,7 @@ from sklearn.model_selection import train_test_split, cross_val_score
 
 # Read the data
 
-df = pd.read_csv(r"C:\Users\güneş market\Desktop\exceld\Fuel_Consumption_Ratings.csv")
+df = pd.read_csv(r"data/Fuel_Consumption_Ratings.csv")
 
 # Data Exploration
 
@@ -137,7 +137,7 @@ reg_model.score(X, y)
 # This solution of the example of multiple linear regression is predicting;
 # CO2 Emission using the features Fuel Consumption, Engine Size and Cylinders of cars.
 
-df = pd.read_csv(r"C:\Users\güneş market\Desktop\exceld\Fuel_Consumption_Ratings.csv")
+df = pd.read_csv(r"data/Fuel_Consumption_Ratings.csv")
 df.head()
 df.describe().T
 df_ = df[['Engine Size','Cylinders','Fuel Consumption', 'CO2 Emissions']]
@@ -216,7 +216,7 @@ np.mean(np.sqrt(-cross_val_score(reg_model,
 # To get better accuracy try to use a multiple linear regression with the same data,
 # but this time use 'Fuel Consumption City', 'Fuel Consumption Hwy' instead of 'Fuel Consumption'.
 
-df = pd.read_csv(r"C:\Users\güneş market\Desktop\exceld\Fuel_Consumption_Ratings.csv")
+df = pd.read_csv(r"data/Fuel_Consumption_Ratings.csv")
 df.head()
 df.describe().T
 df1_ = df[['Engine Size','Cylinders','Fuel Consumption City', 'Fuel Consumption Hwy', 'CO2 Emissions']]
@@ -235,8 +235,8 @@ y_train.shape
 reg_model = LinearRegression().fit(X_train, y_train)
 
 # The coefficients
-print ('Intercept: ',reg_model.intercept_)    #21.59204887
-print ('Coefficients: ', reg_model.coef_[0])  #1.0463683,  3.23835864, 10.53429237, 8.97245603
+print ('Intercept:',reg_model.intercept_)    #21.59204887
+print ('Coefficients:', reg_model.coef_[0])  #1.0463683,  3.23835864, 10.53429237, 8.97245603
 
 
 # Prediction
