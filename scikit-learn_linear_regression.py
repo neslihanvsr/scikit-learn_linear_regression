@@ -126,7 +126,7 @@ np.sqrt(mean_squared_error(y, y_pred))
 mean_absolute_error(y, y_pred)
 # 6.258727993638971
 
-# R-KARE  # veri setindeki bağımsız değişkenlerin bağımlı değişkeni açıklama yüzdesidir!
+# R-SQUARED
 reg_model.score(X, y)
 # 0.9451350821741584
 
@@ -184,14 +184,14 @@ reg_model.predict(new_data)
 y_pred = reg_model.predict(X_train)
 np.sqrt(mean_squared_error(y_train, y_pred))  # 15.446625976286821
 
-# TRAIN RKARE
+# TRAIN RSQUARED
 reg_model.score(X_train, y_train) # 0.9423805674075392
 
 # Test RMSE
 y_pred = reg_model.predict(X_test)
 np.sqrt(mean_squared_error(y_test, y_pred))  # 11.090925681387699
 
-# TEST RKARE
+# TEST RSQUARED
 reg_model.score(X_test, y_test)  # 0.972015617095251
 
 
@@ -262,13 +262,13 @@ reg_model.predict(new_data_2)
 y_pred = reg_model.predict(X_train)
 np.sqrt(mean_squared_error(y_train, y_pred))  # 15.448257728971507
 
-# TRAIN RKARE
+# TRAIN RSQUARED
 reg_model.score(X_train, y_train) # 0.9423683931463056
 
 # Test RMSE
 y_pred = reg_model.predict(X_test)
 np.sqrt(mean_squared_error(y_test, y_pred))  # 11.043899812345115
 
-# TEST RKARE
+# TEST RSQUARED
 reg_model.score(X_test, y_test)  # 0.9722524232995987
 
