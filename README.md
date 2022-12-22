@@ -25,7 +25,7 @@ Simple Regression Model
 
 Linear Regression fits a linear model with coefficients B = (B1, ..., Bn) 
 to minimize the 'residual sum of squares' between the actual value y in the dataset, 
-and the predicted value yhat using linear approximation.
+and the predicted value that using linear approximation.
 
 Modelling
 
